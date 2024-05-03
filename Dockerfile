@@ -21,7 +21,7 @@ FROM nginx:latest
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 # 将构建的React应用程序复制到Nginx的默认静态文件目录
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
 # 暴露80端口
 EXPOSE 80
