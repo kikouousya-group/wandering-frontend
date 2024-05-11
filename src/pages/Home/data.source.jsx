@@ -120,7 +120,7 @@ export const Banner00DataSource = {
     children: '一个强大的素材管理工具',
     style: {marginTop: -100}
   },
-  button: { className: 'banner0-button', children: '下载' },
+  button: { className: 'banner0-button', children: '下载', onClick: () => {window.open("https://wandergallery.top/alist/releases")}},
   button1: { className: 'banner0-button', children: '下载' },
 };
 export const Content00DataSource = {
@@ -225,7 +225,7 @@ export const Content00DataSource = {
               className: 'content0-block-title',
               children: '智能文件夹和引用',
             },
-            { name: 'content', children: '将搜索保存为"智能文件夹", 并支持虚拟复制' },
+            { name: 'content', children: '保存搜索为智能文件夹, 支持虚拟复制' },
           ],
         },
       },
@@ -249,7 +249,7 @@ export const Content00DataSource = {
               className: 'content0-block-title',
               children: '高效素材获取',
             },
-            { name: 'content', children: '支持iqdb相似图片与快捷多窗口搜索, 特定站点专门支持' },
+            { name: 'content', children: '支持iqdb相似图片, e站, 快捷多窗口搜索' },
           ],
         },
       },
@@ -271,9 +271,9 @@ export const Content00DataSource = {
             {
               name: 'title',
               className: 'content0-block-title',
-              children: '',
+              children: '低磁盘读写',
             },
-            { name: 'content', children: '' },
+            { name: 'content', children: ' 本地路径层级, 支持外部文件, mysql数据库' },
           ],
         },
       },
@@ -359,86 +359,7 @@ export const Content30DataSource = {
           },
         },
       },
-      {
-        name: 'block2',
-        className: 'content3-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云监控' },
-          content: {
-            className: 'content3-content',
-            children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
-          },
-        },
-      },
-      {
-        name: 'block3',
-        className: 'content3-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '移动' },
-          content: {
-            className: 'content3-content',
-            children:
-              '一站式移动金融APP开发及全面监控；丰富可用组件，动态发布和故障热修复。',
-          },
-        },
-      },
-      {
-        name: 'block4',
-        className: 'content3-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '分布式中间件' },
-          content: {
-            className: 'content3-content',
-            children:
-              '金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。',
-          },
-        },
-      },
-      {
-        name: 'block5',
-        className: 'content3-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png',
-          },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '大数据' },
-          content: {
-            className: 'content3-content',
-            children:
-              '一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。',
-          },
-        },
-      },
+
     ],
   },
 };
@@ -449,7 +370,7 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <span>
-        ©2018 <a href="https://motion.ant.design">Ant Motion</a> All Rights
+        ©2018 <a href="https://motion.ant.design">Wander Gallery</a> All Rights
         Reserved
       </span>
     ),
